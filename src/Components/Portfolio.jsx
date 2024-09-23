@@ -32,14 +32,12 @@ const imageAltText = "desktop with books and laptop";
 const projectList = [
   {
     title: "Modelando Bancos de Dados com MySQL",
-    description:
-      "Modelando um banco de dados relacional para e-commerce com MySQL",
+    description: "Modelando um banco de dados relacional para e-commerce com MySQL",
     url: "https://github.com/mcaponera/modelando_bd",
   },
   {
     title: "Um aplicativo de delivery usando Flask",
-    description:
-      "em construção",
+    description: "em construção",
     url: "https://github.com/mcaponera",
   },
 ];
@@ -52,7 +50,12 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideInLeft",
+            }}
             alt={imageAltText}
           />
         </div>
